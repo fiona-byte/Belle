@@ -145,6 +145,13 @@ header {
 }
 
 .logo {display: none;}
+/* .nav-brand {
+    color: #444;
+    position: absolute;
+    top: 30%;
+    left: 16%;
+    display: none;
+} */
 
 /* .logo {
     height: 50px;
@@ -180,15 +187,16 @@ header {
     border-bottom: 2px solid #2e86de;
 }
 
-.mobile-icon {
+.toggle-icon {
     float: right;
-    margin-top: 30px;
+    margin-top: 10px;
     cursor: pointer;
     display: none;
 }
 
-.mobile-icon i {
+.toggle-icon i {
     color: #fff;
+    font-size: 150%;
 }
 
 /*            Sticky Navigation               */
@@ -205,11 +213,19 @@ header {
 
 .sticky .logo {
     display: block;
-    height: 40px;
+    height: 30px;
     width: auto;
     float: left;
-    margin: 2px 0;
+    margin: 12px 0 10px;
 }
+
+/* .sticky .nav-brand {
+    color: #444;
+    position: absolute;
+    top: 30%;
+    left: 16%;
+    display: block;
+} */
 
 .sticky .nav-items { margin: 18px;}
 
@@ -505,7 +521,7 @@ footer {
 
     .nav-items { display: none;}
 
-    .mobile-icon {
+    .toggle-icon {
         display: inline-block;
     }
     .nav-items{ 
@@ -527,9 +543,9 @@ footer {
         padding: 10px 0;
     }
 
-    .sticky .mobile-icon i { 
+    .sticky .toggle-icon i { 
         color: #444;
-        margin-bottom: 25px;
+        margin-bottom: 2px;
     } 
 
     h1 { font-size: 180%;}
@@ -580,7 +596,10 @@ footer {
 /*    For devices from 0 to 480px */
 @media only screen and (max-width: 480px) {
     body { font-size: .8rem;}
-    section{ padding: 70px;}
+    section{ 
+        padding: 70px;
+        width: 100%;
+    }
 
     h1 { font-size: 130%;}
     h2 { font-size: 110%;}
@@ -599,12 +618,17 @@ footer {
         display: block;
         height: 30px;
         width: auto;
-        margin: 20px 0 0;
+        margin: 10px 0 10px;
     }
 
     .works-step {
         margin-bottom: 10px;
         width: 100%;
+        padding-bottom: 30px;
+    }
+    .works-step div {
+        float: none;
+        margin-bottom: 15px;
     }
 
     .feat-summary {width: 100%;}

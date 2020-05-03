@@ -39,7 +39,7 @@ $(document).ready(function(){
 
     // Toggle
 
-    $('.mobile-icon').click(function() {
+    $('.toggle-icon').click(function() {
         var nav = $('.nav-items');
 
         nav.slideToggle(200);
